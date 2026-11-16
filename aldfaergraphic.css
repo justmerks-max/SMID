@@ -1,0 +1,136 @@
+.boy,
+.girl,
+.unkn		{ color: black;
+		  border-top:	 0.2em solid silver;
+		  border-left:   0.2em solid silver;
+		  border-bottom: 0.2em solid gray;
+		  border-right:  0.2em solid gray;
+		  position: absolute; 
+		  z-index: 20;
+		  white-space: nowrap;
+		  cursor: default; 
+		  overflow: hidden;
+		  line-height: 1.2em;
+		  padding-left:  0.2em;
+		  padding-right: 0.2em; 
+		  padding-top: 0.1em; 
+		  padding-bottom: 0.1em; 
+}
+
+.boy:hover,
+.girl:hover,
+.unkn:hover 	{ border: 0.2em solid black; }
+
+.boy		{ background-color: #FFFFCC }
+.girl	   	{ background-color: #FFCCFF }
+.unkn	   	{ background-color: #FFFFFF }
+
+.shadow		{ position: absolute; }
+@media screen {
+.shadow	 	{ position: absolute;
+		  border: 0.2em solid #eeeeee;
+		  background-color: #cccccc;
+		  z-index: 1;
+		  opacity: .5;
+		  filter: alpha(opacity=50);
+		  left: 0.8em; top: 0.4em; }
+}
+@media print {
+.shadow		{ position: absolute; }
+}
+
+.lnk		{ position: absolute;
+		  cursor: pointer;
+		  border: 0.2em solid black;
+		  background-color: silver;
+		  padding:0em; 
+		  z-index: 20;
+		  left: 0em; top: 1.3em;
+		  overflow: hidden;
+}
+
+.lnk:hover  	{ background-color: white; border-color:red; }
+
+a.divlink, 
+a.divlink:link	{ display:block;
+		  text-align:center;
+		  text-decoration: none; }
+
+.infobox
+		{ color: black;
+		  background-color: lightyellow;
+		  border: 0.2em solid blue;
+		  position: absolute;
+		  top: 12em;
+		  left: 0;
+		  z-index: 30;
+		  visibility: hidden;
+		  width: 30em;
+		  height: auto;
+		  overflow:visible; }
+
+.infobar	{ background-color:blue;
+		  height:1.6em; }
+
+.infoclose  	{ text-align:center;
+		  background-color:red;
+		  color:white;
+		  font-weight:bold;
+		  position:absolute;
+		  border:0.1em solid white;
+		  left:28.6em;
+		  width:1.2em;
+		  height:1.2em;
+		  cursor:default; }
+
+.infoclose:hover { background-color:#ff8888; }
+
+.abbrx		{ text-align:right; cursor: pointer; }
+.Hyperlinks	{ text-decoration: none; }
+@media screen {
+.notonprint	{ display: inline; }
+.notitleonprint	{ display: block; }
+.Hyperlinks	{ text-decoration: underline; }
+}
+@media print {
+.notonprint, 
+.notitleonprint	{ display: none; }
+.Hyperlinks	{ text-decoration: none; color: black; }
+}
+
+body		{ overflow: auto; font-family: Verdana, Helvetica, sans-serif; font-size: 10px; }
+tr		{ vertical-align: top; }
+
+.toolbox	{ visibility: hidden;
+		  position: absolute;
+		  background-color: lightyellow;
+		  top: 0;
+		  left: 0;
+		  z-index: 100;
+		  padding: 0.2em;
+		  border-left: 0.1em solid black;
+		  border-top: 0.1em solid black;
+		  border-right: 0.2em solid gray;
+		  border-bottom: 0.2em solid gray;
+		  cursor: pointer;
+		  width: 25em; }
+
+.naaronder	{ border-bottom: 0.2em solid gray; 
+		  border-left: 0.2em solid gray; 
+		  position: absolute; }
+
+.naarboven	{ border-top: 0.2em solid gray; 
+		  border-left: 0.2em solid gray; 
+		  position: absolute; }
+
+.naarbeiden	{ border-top: 0.2em solid gray; 
+		  border-bottom: 0.2em solid gray; 
+		  border-left: 0.2em solid gray; 
+		  position: absolute; }
+
+.rechtdoor	{ border-top: 0.2em solid gray; 
+		  position: absolute; }
+
+.blokje		{ border: 0.2em none; 
+		  position: absolute; }
+
